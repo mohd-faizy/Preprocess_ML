@@ -2,6 +2,11 @@
 
  This repository hosts Python code that utilizes the Scikit-learn preprocessing API for data preprocessing. The code presents a comprehensive range of tools that handle missing data, scale data, encode categorical variables, and perform other functions.
 
+ <p align='center'>
+  <a href="#"><img src='_img\prepro_.jpg'></a>
+</p>
+
+
 
 ## What is Data Preprocessing?
 
