@@ -34,34 +34,34 @@ The Scikit-learn preprocessing API provides a range of tools for data preprocess
 
 | API | Description |
 | --- | --- |
-| Binarizer | Binarize data (set feature values to 0 or 1) according to a threshold. |
-| FunctionTransformer | Constructs a transformer from an arbitrary callable. |
-| KBinsDiscretizer | Bin continuous data into intervals. |
-| KernelCenterer | Center an arbitrary kernel matrix. |
-| LabelBinarizer | Binarize labels in a one-vs-all fashion. |
-| LabelEncoder | Encode target labels with value between 0 and n_classes-1. |
-| MultiLabelBinarizer | Transform between iterable of iterables and a multilabel format. |
-| MaxAbsScaler | Scale each feature by its maximum absolute value. |
-| MinMaxScaler | Transform features by scaling each feature to a given range. |
-| Normalizer | Normalize samples individually to unit norm. |
-| OneHotEncoder | Encode categorical features as a one-hot numeric array. |
-| OrdinalEncoder | Encode categorical features as an integer array. |
-| PolynomialFeatures | Generate polynomial and interaction features. |
-| PowerTransformer | Apply a power transform featurewise to make data more Gaussian-like. |
-| QuantileTransformer | Transform features using quantiles information. |
-| RobustScaler | Scale features using statistics that are robust to outliers. |
-| SplineTransformer | Generate univariate B-spline bases for features. |
-| StandardScaler | Standardize features by removing the mean and scaling to unit variance. |
-| add_dummy_feature | Augment dataset with an additional dummy feature. |
-| binarize | Boolean thresholding of array-like or scipy.sparse matrix. |
-| label_binarize | Binarize labels in a one-vs-all fashion. |
-| maxabs_scale | Scale each feature to the [-1, 1] range without breaking the sparsity. |
-| minmax_scale | Transform features by scaling each feature to a given range. |
-| normalize | Scale input vectors individually to unit norm (vector length). |
-| quantile_transform | Transform features using quantiles information. |
-| robust_scale | Standardize a dataset along any axis. |
-| scale | Standardize a dataset along any axis. |
-| power_transform | Parametric, monotonic transformation to make data more Gaussian-like. |
+| `Binarizer` | Binarizes continuous data by setting feature values above a threshold to 1 and those below it to 0. This is useful when you want to convert continuous data into a binary format for use in some algorithms.|
+| `FunctionTransformer` | Constructs a transformer from an arbitrary callable. This allows you to apply any custom function to your data as a part of a scikit-learn pipeline. |
+| `KBinsDiscretizer` |Bins continuous data into intervals using equal width or equal frequency. This transformer can be useful when you want to discretize a continuous variable into a categorical variable, e.g. to prepare it for use in a decision tree model. |
+| `KernelCenterer` | Centers an arbitrary kernel matrix by subtracting the row and column means from each element. This is useful when you want to center a kernel matrix that has been constructed using some kernel function, e.g. in a support vector machine. |
+| `LabelBinarizer` | Binarizes labels in a one-vs-all fashion, where each class is treated as a binary classification problem. This transformer is useful when you have a multi-class classification problem and want to convert your labels into a binary format. |
+| `LabelEncoder` | Encodes target labels with a value between 0 and n_classes-1. This transformer is useful when you have a multi-class classification problem and want to convert your labels into a numerical format. |
+| `MultiLabelBinarizer` | Transforms between an iterable of iterables and a multilabel format. This transformer is useful when you have a multi-label classification problem and want to convert your labels into a binary format. |
+| `MaxAbsScaler` | Scales each feature by its maximum absolute value. This transformer is useful when you want to scale your features to a range between -1 and 1, but want to preserve the sparsity of sparse matrices. |
+| `MinMaxScaler` |Scales each feature to a given range, typically [0, 1] or [-1, 1]. This transformer is useful when you want to scale your features to a specific range for use in some algorithms. |
+| `Normalizer` | Normalizes samples individually to unit norm. This transformer is useful when you want to scale your samples to have a unit norm, which can be useful in some distance-based algorithms. |
+| `OneHotEncoder` | Encodes categorical features as a one-hot numeric array. This transformer is useful when you have categorical features that need to be converted into a numerical format. |
+| `OrdinalEncoder` | Encodes categorical features as an integer array. This transformer is useful when you have categorical features that need to be converted into a numerical format, but the order of the categories is important. |
+| `PolynomialFeatures` | Generates polynomial and interaction features up to a specified degree. This transformer is useful when you want to add polynomial or interaction features to your data, e.g. to capture non-linear relationships.|
+| `PowerTransformer` | Applies a power transform featurewise to make data more Gaussian-like. This transformer is useful when you have data that is not normally distributed and want to make it more amenable to certain statistical models. |
+| `QuantileTransformer` | Transforms features using quantiles information. This transformer is useful when you want to transform your features to have a specified distribution, e.g. to make them more Gaussian-like or uniform.|
+| `RobustScaler` | Scales features using statistics that are robust to outliers. This transformer is useful when you have data with outliers and want to scale your features |
+| `SplineTransformer` | Generate univariate B-spline bases for features. |
+| `StandardScaler` | Standardize features by removing the mean and scaling to unit variance. |
+| `add_dummy_feature` | Augment dataset with an additional dummy feature. |
+| `binarize` | Boolean thresholding of array-like or scipy.sparse matrix. |
+| `label_binarize` | Binarize labels in a one-vs-all fashion. |
+| `maxabs_scale` | Scale each feature to the [-1, 1] range without breaking the sparsity. |
+| `minmax_scale` | Transform features by scaling each feature to a given range. |
+| `normalize` | Scale input vectors individually to unit norm (vector length). |
+| `quantile_transform` | Transform features using quantiles information. |
+| `robust_scale` | Standardize a dataset along any axis. |
+| `scale` | Standardize a dataset along any axis. |
+| `power_transform` | Parametric, monotonic transformation to make data more Gaussian-like. |
 
 
 ## What is this Repository?
