@@ -74,9 +74,9 @@ The Scikit-learn preprocessing API provides a range of tools for data preprocess
 This repository contains Python code that utilizes the Scikit-learn preprocessing API for data preprocessing. The code presents a comprehensive range of tools that handle missing data, scale data, encode categorical variables, and perform other functions. The code is organized into modules that correspond to different data preprocessing tasks.
 
 
-### Conclusion
 
-This repository contains Python code that utilizes the Scikit-learn preprocessing API for data preprocessing. The code presents a comprehensive range of tools that handle missing data, scale data, encode categorical variables, and perform other functions. The code is organized into modules that correspond to different data preprocessing tasks. The code in this repository can be used to prepare data for machine learning algorithms and improve the performance of machine learning models.
+
+
 
 ### Contributing
 This repository is open source and contributions are welcome. If you have any ideas for hacks or tips, or if you find any errors, please feel free to open an issue or submit a pull request.
