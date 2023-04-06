@@ -1,4 +1,13 @@
-# Preprocess_ML
+![Author](https://img.shields.io/badge/author-faizy-blue)
+![License](https://img.shields.io/badge/license-MIT-brightgreen)
+![Platform](https://img.shields.io/badge/platform-Visual%20Studio%20Code-blue)
+![Maintained](https://img.shields.io/maintenance/yes/2023)
+![Last Commit](https://img.shields.io/github/last-commit/mohd-faizy/Preprocess_ML)
+![Issues](https://img.shields.io/github/issues/mohd-faizy/Preprocess_ML)
+![Stars GitHub](https://img.shields.io/github/stars/mohd-faizy/Preprocess_ML)
+![Language](https://img.shields.io/github/languages/top/mohd-faizy/Preprocess_ML)
+![Size](https://img.shields.io/github/repo-size/mohd-faizy/Preprocess_ML)
+# **Preprocessing**
 
  This repository hosts Python code that utilizes the Scikit-learn preprocessing API for data preprocessing. The code presents a comprehensive range of tools that handle missing data, scale data, encode categorical variables, and perform other functions.
 
@@ -6,6 +15,15 @@
   <a href="#"><img src='_img\prepro_.jpg'></a>
 </p>
 
+# what this Repo covers:
+- Imputation of missing values using `Imputer`.
+- Label encoding of categorical variables using `LabelEncoder` .
+- One hot encoding of categorical variables using `OneHotEncoder` 
+- Standardization of features using `StandardScaler` .
+- Normalization of features using `Normalizer`. 
+- Binning and discretization of features using `Binarizer` and KBinsDiscretizer. 
+- Polynomial feature expansion using `PolynomialFeatures`.
+- Feature selection using `SelectKBest`, `chi2`, and `SelectFromModel`.
 
 
 ## What is Data Preprocessing?
