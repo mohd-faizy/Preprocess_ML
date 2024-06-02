@@ -9,24 +9,22 @@
 ![Size](https://img.shields.io/github/repo-size/mohd-faizy/Preprocess_ML)
 # **Preprocessing**
 
- This repository hosts Python code that utilizes the Scikit-learn preprocessing API for data preprocessing. The code presents a comprehensive range of tools that handle missing data, scale data, encode categorical variables, and perform other functions.
-
  <p align='center'>
   <a href="#"><img src='_img\prepro_.jpg'></a>
 </p>
 
-# what this Repo covers:
-- Imputation of missing values using `Imputer`.
-- Label encoding of categorical variables using `LabelEncoder` .
-- One hot encoding of categorical variables using `OneHotEncoder` 
-- Standardization of features using `StandardScaler` .
-- Normalization of features using `Normalizer`. 
-- Binning and discretization of features using `Binarizer` and KBinsDiscretizer. 
-- Polynomial feature expansion using `PolynomialFeatures`.
-- Feature selection using `SelectKBest`, `chi2`, and `SelectFromModel`.
+Welcome to the Preprocessing Library for Machine Learning, where we will be using the Scikit-learn preprocessing API to streamline our data preprocessing tasks. This repository provides utilities for handling `missing data`, `scaling features`, `encoding categorical variables`, and more.
 
 
-## What is Data Preprocessing?
+## Repository Roadmap
+
+
+ <p align='center'>
+  <a href="#"><img src='_img\Preprocessing.png'></a>
+</p>
+
+
+## 🔥What is Data Preprocessing?
 
 Data preprocessing is the process of preparing data for machine learning algorithms. The goal of data preprocessing is to transform raw data into a format that can be used by machine learning algorithms. Data preprocessing involves a range of tasks such as handling missing data, scaling data, encoding categorical variables, and performing other functions.
 
@@ -51,7 +49,7 @@ Data preprocessing is the process of preparing data for machine learning algorit
 | `Data augmentation` | Creating new samples by applying random transformations to existing samples. This is often used in computer vision and natural language processing to increase the size of the dataset and improve the generalization of the model. |
 
 
-## What is the Scikit-learn Preprocessing API?
+## 🔥Scikit-learn Preprocessing API?
 
 The Scikit-learn preprocessing API provides a range of tools for data preprocessing. The preprocessing API includes tools for handling missing data, scaling data, encoding categorical variables, and performing other functions. The Scikit-learn preprocessing API is used by many machine learning algorithms in the Scikit-learn library.
 
@@ -87,36 +85,93 @@ The Scikit-learn preprocessing API provides a range of tools for data preprocess
 | `power_transform` | Parametric, monotonic transformation to make data more Gaussian-like. |
 
 
-## What is this Repository?
 
-This repository contains Python code that utilizes the Scikit-learn preprocessing API for data preprocessing. The code presents a comprehensive range of tools that handle missing data, scale data, encode categorical variables, and perform other functions. The code is organized into modules that correspond to different data preprocessing tasks.
+## ➤ Repository Structure
+
+The repository is organized into modules that correspond to different preprocessing tasks, making it easy to find and use the tools you need.
+
+```bash
+├── imputation
+│   ├── simple_imputer.ipynb
+├── encoding
+│   ├── label_encoder.ipynb
+│   ├── onehot_encoder.ipynb
+├── scaling
+│   ├── standard_scaler.ipynb
+│   ├── normalizer.ipynb
+├── binning
+│   ├── binarizer.ipynb
+│   ├── kbins_discretizer.ipynb
+├── feature_expansion
+│   ├── polynomial_features.ipynb
+├── feature_selection
+│   ├── select_k_best.ipynb
+│   ├── select_from_model.ipynb
+└── README.md
+```
+
+## ➤ Installation
+
+To use this library, clone the repository and install the required dependencies:
+
+```bash
+git clone <https://github.com/mohd-faizy/Preprocess_ML.git>
+cd Preprocess_ML
+pip install -r requirements.txt
+```
+
+## ➤ Example Usage
+
+Here's an example of how to use the preprocessing tools in this library:
+
+```python
+from sklearn.datasets import load_iris
+from preprocessing.scaling import StandardScaler
+from preprocessing.encoding import LabelEncoder
+
+# Load dataset
+data = load_iris()
+X = data.data
+y = data.target
+
+# Standardize features
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+
+# Encode labels
+encoder = LabelEncoder()
+y_encoded = encoder.fit_transform(y)
+
+print("Scaled Features:", X_scaled)
+print("Encoded Labels:", y_encoded)
+
+```
 
 
+## ⚖ ➤ License
 
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
+## ❤️ ➤ Support
 
+If you find this repository helpful, show your support by starring it! For questions or feedback, reach out on [Twitter(`X`)](https://twitter.com/F4izy).
 
-### Contributing
-This repository is open source and contributions are welcome. If you have any ideas for hacks or tips, or if you find any errors, please feel free to open an issue or submit a pull request.
+#### $\color{skyblue}{\textbf{Connect with me:}}$
 
-### License
-This repository is licensed under the [MIT License](https://github.com/mohd-faizy/Preprocess_ML/blob/main/LICENSE.txt).
-
-#### Thanks for checking out this repository! I hope you find it helpful.
-
----
-
-<p align='center'>
-  <a href="#"><img src='https://tymsai.netlify.app/resource/1.gif' height='10' width=100% alt="div"></a>
-</p>
-
-### $\color{skyblue}{\textbf{Connect with me:}}$
+🔃 ➤ If you have questions or feedback, feel free to reach out!!!
 
 [<img align="left" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" width="32px"/>][twitter]
 [<img align="left" src="https://cdn-icons-png.flaticon.com/512/145/145807.png" width="32px"/>][linkedin]
-[<img align="left" src="https://cdn2.iconfinder.com/data/icons/whcompare-blue-green-web-hosting-1/425/cdn-512.png" width="32px"/>][Portfolio]
+[<img align="left" src="https://cdn-icons-png.flaticon.com/512/2626/2626299.png" width="32px"/>][StackOverflow]
+[<img align="left" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="32px"/>][GitHub]
 
 [twitter]: https://twitter.com/F4izy
 [linkedin]: https://www.linkedin.com/in/mohd-faizy/
-[Portfolio]: https://mohdfaizy.com/
+[StackOverflow]: https://ai.stackexchange.com/users/36737/faizy?tab=profile
+[GitHub]: https://github.com/F4izy
+
+
+---
+
+<img src="https://github-readme-stats.vercel.app/api?username=mohd-faizy&show_icons=true" width=380px height=200px />
 
