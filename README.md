@@ -168,7 +168,7 @@ If you find this repository helpful, show your support by starring it! For quest
 [twitter]: https://twitter.com/F4izy
 [linkedin]: https://www.linkedin.com/in/mohd-faizy/
 [StackOverflow]: https://ai.stackexchange.com/users/36737/faizy?tab=profile
-[GitHub]: https://github.com/F4izy
+[GitHub]: https://github.com/mohd-faizy
 
 
 ---
