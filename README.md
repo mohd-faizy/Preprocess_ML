@@ -1,7 +1,7 @@
 ![Author](https://img.shields.io/badge/author-faizy-blue)
 ![License](https://img.shields.io/badge/license-MIT-brightgreen)
 ![Platform](https://img.shields.io/badge/platform-Visual%20Studio%20Code-blue)
-![Maintained](https://img.shields.io/maintenance/yes/2023)
+![Maintained](https://img.shields.io/maintenance/yes/2024)
 ![Last Commit](https://img.shields.io/github/last-commit/mohd-faizy/Preprocess_ML)
 ![Issues](https://img.shields.io/github/issues/mohd-faizy/Preprocess_ML)
 ![Stars GitHub](https://img.shields.io/github/stars/mohd-faizy/Preprocess_ML)
@@ -16,12 +16,10 @@
 Welcome to the Preprocessing Library for Machine Learning, where we will be using the Scikit-learn preprocessing API to streamline our data preprocessing tasks. This repository provides utilities for handling `missing data`, `scaling features`, `encoding categorical variables`, and more.
 
 
-## Repository Roadmap
+## 🛣️Roadmap
 
 
- <p align='center'>
-  <a href="#"><img src='_img\Preprocessing.png'></a>
-</p>
+![Preprocessing-Map](https://github.com/mohd-faizy/Preprocess_ML/blob/main/_img/Preprocessing-Map.png)
 
 
 ## 🔥What is Data Preprocessing?
